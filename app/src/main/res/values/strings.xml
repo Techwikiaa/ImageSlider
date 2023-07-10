@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ImageSlider</string>
+    <string name="new1">we are waiting for your review for new films</string>
+    <string name="new2">Review of flims in 3D formate becoming more acceptable</string>
+    <string name="new3">Get into the world of cinema with Imagix Cinema</string>
+    <string name="new4">Drawing of two tickets for the films "Murder in the Orient Express"</string>
+    <string name="new5">Movies are getting realstic in Imax 3D and peoples are loving it</string>
+    <string name="info_phn">Info@imagecinema.com\n +38(099)01 01 001</string>
+    <string name="copyright"> ® Image Cinema all right reversed </string>
+</resources>

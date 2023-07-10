@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <!--SCROLL ONLY CHILD-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:orientation="vertical">
+
+
+                <!-- image slider view -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="@drawable/venom_2">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="130dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        >
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/arrow_back"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="01"
+                            android:textColor="@color/gray_txt"
+                            android:layout_marginLeft="15dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="02"
+                            android:textSize="30sp"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="#DA1E1E"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="03"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/gray_txt"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="04"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/gray_txt"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="05"
+                            android:layout_marginLeft="15dp"
+                            android:textColor="@color/gray_txt"
+                            />
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="15dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/arrow_forward"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/image_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="1dp"
+                        app:iss_auto_cycle="true"
+                        app:iss_delay="1000"
+                        app:iss_period="2000"
+                        app:iss_text_align="CENTER" />
+
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="30dp"
+                        android:elevation="1dp"
+                        android:src="@drawable/imax_logo" />
+
+                    <LinearLayout
+                        android:id="@+id/linearlayout001"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true">
+
+                    <Button
+                        android:id="@+id/home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:elevation="1dp"
+                        android:text="Home"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/movie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:elevation="1dp"
+                        android:text="Movie"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/schedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:elevation="1dp"
+                        android:text="Schedule"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:elevation="1dp"
+                        android:text="News"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <ImageButton
+                        android:id="@+id/search_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_alignStart="@+id/news"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/search_icon"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/signin"
+                        android:layout_width="130dp"
+                        android:layout_height="50dp"
+                        android:background="@color/red"
+                        android:elevation="1dp"
+                        android:text="sign in"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/logo"
+                        android:layout_marginTop="330dp"
+                        android:background="@color/red"
+                        android:elevation="1dp"
+                        android:text="Book Now"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <ImageButton
+                        android:id="@+id/playbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="250dp"
+                        android:layout_marginTop="320dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icons8_play_button_96"
+                        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                    <TextView
+                        android:id="@+id/watchtailer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="250dp"
+                        android:layout_marginTop="420dp"
+                        android:elevation="1dp"
+                        android:text="Watch Tailer"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:typeface="serif" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/fb_logo"
+                        android:backgroundTint="@color/white"
+                        android:elevation="1dp" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="60dp"
+                        android:background="@drawable/insta_logo"
+                        android:backgroundTint="@color/white"
+                        android:elevation="1dp" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="100dp"
+                        android:background="@drawable/twitter_logo"
+                        android:backgroundTint="@color/white"
+                        android:elevation="1dp" />
+
+                </RelativeLayout>
+
+
+                <!--below image slider opening this weekend-->
+
+                <RelativeLayout
+                    android:id="@+id/relative2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/black">
+
+
+                    <!--OPENING THIS WEEKEND-->
+
+
+                    <TextView
+                        android:id="@+id/opening"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OPENING THIS WEEK"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="1000dp"
+                        android:layout_height="3dp"
+                        android:layout_below="@+id/opening"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/line_gradient" />
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view1"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/botton_text_color_stroke"
+                        android:text="All Flims"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view1"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_bg"
+                        android:text="2D"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view1"
+                        android:layout_marginStart="220dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_bg"
+                        android:text="3D"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view1"
+                        android:layout_marginStart="330dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_bg"
+                        android:text="IMAX"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn5"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view1"
+                        android:layout_marginStart="440dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_bg"
+                        android:text="IMAX 3D"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/btn1"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/venom" />
+
+                    <TextView
+                        android:id="@+id/txtview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img1"
+                        android:layout_marginStart="30dp"
+                        android:text="Venom"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview1"
+                        android:layout_alignStart="@+id/txtview1"
+                        android:text="130 min | ACTION"
+                        android:textColor="#6C6C6C"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/img1"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/thor" />
+
+                    <TextView
+                        android:id="@+id/txtview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img2"
+                        android:layout_marginStart="30dp"
+                        android:text="Thor"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview2"
+                        android:layout_alignStart="@+id/txtview2"
+                        android:text="130 min | ACTION"
+                        android:textColor="#6C6C6C"
+                        android:textSize="10sp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_n2"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/img3"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/img2"
+                        android:src="@drawable/bumblebee" />
+
+                    <TextView
+                        android:id="@+id/txtview_n2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_n2"
+                        android:layout_alignStart="@+id/img_n2"
+                        android:layout_marginStart="30dp"
+                        android:text="BumbleBee"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview_n2"
+                        android:layout_alignStart="@+id/txtview_n2"
+                        android:text="130 min | ACTION"
+                        android:textColor="#6C6C6C"
+                        android:textSize="10sp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_n3"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/img3"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/img_n2"
+                        android:src="@drawable/mortalengines" />
+
+                    <TextView
+                        android:id="@+id/txtview_n3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_n3"
+                        android:layout_alignStart="@+id/img_n3"
+                        android:layout_marginStart="30dp"
+                        android:text="Mortal Engines"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview_n3"
+                        android:layout_alignStart="@+id/txtview_n3"
+                        android:text="130 min | ACTION,DRAMA"
+                        android:textColor="#6C6C6C"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/img_n4"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/img3"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/img_n3"
+                        android:src="@drawable/underworldbloodwars" />
+
+                    <TextView
+                        android:id="@+id/txtview_n4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_n4"
+                        android:layout_alignStart="@+id/img_n4"
+                        android:layout_marginStart="30dp"
+                        android:text="Underworld Blood Wars"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview_n4"
+                        android:layout_alignStart="@+id/txtview_n4"
+                        android:text="130 min | ACTION"
+                        android:textColor="#6C6C6C"
+                        android:textSize="10sp" />
+
+
+                    <ImageView
+                        android:id="@+id/img_n5"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/img_n1"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/img_n4"
+                        android:src="@drawable/ultron" />
+
+                    <TextView
+                        android:id="@+id/txtview_n5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_n5"
+                        android:layout_alignStart="@+id/img_n5"
+                        android:layout_marginStart="30dp"
+                        android:text="Age of Ultron"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview_n5"
+                        android:layout_alignStart="@+id/txtview_n5"
+                        android:text="130 min | ACTION"
+                        android:textColor="#6C6C6C"
+                        android:textSize="10sp" />
+
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/btn2"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/img1"
+                        android:src="@drawable/dunkirk" />
+
+                    <TextView
+                        android:id="@+id/txtview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img3"
+                        android:layout_alignStart="@+id/img3"
+                        android:layout_marginStart="50dp"
+                        android:text="Dunkirk"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview3"
+                        android:layout_alignStart="@+id/txtview3"
+                        android:text="130 min | ACTION"
+                        android:textColor="#6C6C6C"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/btn4"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/img3"
+                        android:src="@drawable/batmanvssuperman" />
+
+                    <TextView
+                        android:id="@+id/txtview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img4"
+                        android:layout_alignStart="@+id/img4"
+                        android:layout_marginStart="50dp"
+                        android:ems="10"
+                        android:text="Batman vs Superman"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview4"
+                        android:layout_alignStart="@+id/txtview4"
+                        android:text="130 min | ACTION"
+                        android:textColor="#6C6C6C"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/btn4"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/img4"
+                        android:src="@drawable/johnwick" />
+
+                    <TextView
+                        android:id="@+id/txtview5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img5"
+                        android:layout_alignStart="@+id/img5"
+                        android:layout_marginStart="50dp"
+                        android:ems="10"
+                        android:text="John wick 2"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview5"
+                        android:layout_alignStart="@+id/txtview5"
+                        android:text="130 min | ACTION"
+                        android:textColor="#6C6C6C"
+                        android:textSize="10sp" />
+
+                    <ImageView
+                        android:id="@+id/img_n1"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_below="@+id/btn4"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/img5"
+                        android:src="@drawable/aquaman" />
+
+                    <TextView
+                        android:id="@+id/txtview_n1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img_n1"
+                        android:layout_alignStart="@+id/img_n1"
+                        android:layout_marginStart="50dp"
+                        android:ems="10"
+                        android:text="John wick 2"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtview_n1"
+                        android:layout_alignStart="@+id/txtview_n1"
+                        android:text="130 min | ACTION"
+                        android:textColor="#6C6C6C"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+
+
+
+                <!-- COMING SOON -->
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="900dp"
+                    android:background="@drawable/ultron"
+                    android:orientation="vertical">
+
+                    <!-- Background ultron -->
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#D0020C16">
+
+
+                        <TextView
+                            android:id="@+id/coming"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:text="COMING SOON"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="1000dp"
+                            android:layout_height="2dp"
+                            android:layout_below="@+id/coming"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/line_gradient" />
+
+                        <ImageView
+                            android:id="@+id/img6"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_below="@+id/view2"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/justiceleague" />
+                        <TextView
+                            android:id="@+id/txtview_n6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img6"
+                            android:layout_alignStart="@+id/img6"
+                            android:layout_marginStart="30dp"
+                            android:ems="10"
+                            android:text="Justice League"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtview_n6"
+                            android:layout_alignStart="@+id/txtview_n6"
+                            android:text="130 min | ACTION"
+                            android:textColor="#6C6C6C"
+                            android:textSize="10sp" />
+
+
+
+
+                        <ImageView
+                            android:id="@+id/img7"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_below="@+id/view2"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@+id/img6"
+                            android:src="@drawable/warcraft" />
+
+                        <TextView
+                            android:id="@+id/txtview_n7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img7"
+                            android:layout_alignStart="@+id/img7"
+                            android:layout_marginStart="40dp"
+                            android:text="WarCraft"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtview_n7"
+                            android:layout_alignStart="@+id/txtview_n7"
+                            android:text="130 min | ACTION"
+                            android:textColor="#6C6C6C"
+                            android:textSize="10sp" />
+
+                        <ImageView
+                            android:id="@+id/img8"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_below="@+id/view2"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@+id/img7"
+                            android:src="@drawable/rampage" />
+
+
+                        <TextView
+                            android:id="@+id/txtview_n8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img7"
+                            android:layout_alignStart="@+id/img8"
+                            android:layout_marginStart="30dp"
+                            android:text="Rampage"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtview_n8"
+                            android:layout_alignStart="@+id/txtview_n8"
+                            android:text="130 min | ACTION"
+                            android:textColor="#6C6C6C"
+                            android:textSize="10sp" />
+
+
+
+                        <ImageView
+                            android:id="@+id/img9"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_below="@+id/view2"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@+id/img8"
+                            android:src="@drawable/ironlady" />
+
+                        <TextView
+                            android:id="@+id/txtview_n9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img9"
+                            android:layout_alignStart="@+id/img9"
+                            android:layout_marginStart="40dp"
+                            android:text="IronLady"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtview_n9"
+                            android:layout_alignStart="@+id/txtview_n9"
+                            android:text="130 min | ACTION"
+                            android:textColor="#6C6C6C"
+                            android:textSize="10sp" />
+
+
+
+                        <ImageView
+                            android:id="@+id/img10"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_below="@+id/view2"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@+id/img9"
+                            android:src="@drawable/assassin" />
+
+
+                        <TextView
+                            android:id="@+id/txtview_n10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img10"
+                            android:layout_alignStart="@+id/img10"
+                            android:layout_marginStart="40dp"
+                            android:text="IronLady"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtview_n10"
+                            android:layout_alignStart="@+id/txtview_n10"
+                            android:text="130 min | ACTION"
+                            android:textColor="#6C6C6C"
+                            android:textSize="10sp" />
+
+
+
+                        <!--NEWS TEXT-->
+                        <TextView
+                            android:id="@+id/newsview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img8"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="60dp"
+                            android:text="NEWS"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+
+                        <!-- NEWS IMAGES -->
+
+                        <ImageView
+                            android:id="@+id/news1"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_below="@+id/newsview"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/news_1" />
+
+                        <TextView
+                            android:id="@+id/newstxt1"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/news1"
+                            android:layout_alignStart="@+id/news1"
+                            android:gravity="center_vertical"
+                            android:text="@string/new1"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/news2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_below="@+id/newsview"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@+id/news1"
+                            android:src="@drawable/news_2" />
+
+                        <TextView
+                            android:id="@+id/newstxt2"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/news2"
+                            android:layout_alignStart="@+id/news2"
+                            android:gravity="center_vertical"
+                            android:text="@string/new2"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/news3"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_below="@+id/newsview"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@+id/news2"
+                            android:src="@drawable/news_3" />
+
+                        <TextView
+                            android:id="@+id/newstxt3"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/news3"
+                            android:layout_alignStart="@+id/news3"
+                            android:gravity="center_vertical"
+                            android:text="@string/new3"
+                            android:textColor="@color/white" />
+
+                        <ImageView
+                            android:id="@+id/news4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:layout_below="@+id/newsview"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@+id/news3"
+                            android:src="@drawable/news_4" />
+
+                        <TextView
+                            android:id="@+id/newstxt4"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/news4"
+                            android:layout_alignStart="@+id/news4"
+                            android:gravity="center_vertical"
+                            android:text="@string/new4"
+                            android:textColor="@color/white" />
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/newstxt1"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/arrow_back"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <ImageButton
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/newstxt4"
+                            android:layout_toRightOf="@+id/newstxt4"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/arrow_forward"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#EB0C0C0C">
+
+                        <ImageView
+                            android:id="@+id/imaxLogo"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/imax_logo" />
+
+                        <Button
+                            android:id="@+id/home2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/schedule2"
+                            android:layout_marginTop="20dp"
+                            android:background="@android:color/transparent"
+                            android:text="Home"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/schedule2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignBaseline="@+id/home2"
+                            android:background="@android:color/transparent"
+                            android:text="Schedule"
+                            android:textColor="@color/white" />
+                        <Button
+                            android:id="@+id/movie2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/home2"
+                            android:layout_toRightOf="@+id/schedule2"
+                            android:background="@android:color/transparent"
+                            android:text="Schedule"
+                            android:textColor="@color/white" />
+                        <Button
+                            android:id="@+id/newsbtn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/home2"
+                            android:layout_toRightOf="@+id/movie2"
+                            android:background="@android:color/transparent"
+                            android:text="News"
+                            android:textColor="@color/white" />
+                        <ImageView
+                            android:id="@+id/fblogo"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/fb_logo"
+                            android:layout_marginTop="75dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="150dp"
+                            android:backgroundTint="@color/white"
+                            android:elevation="1dp" />
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/insta_logo"
+                            android:layout_marginTop="75dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="120dp"
+                            android:backgroundTint="@color/white"
+                            android:elevation="1dp" />
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/twitter_logo"
+                            android:layout_marginTop="75dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="88dp"
+                            android:backgroundTint="@color/white"
+                            android:elevation="1dp" />
+                        <TextView
+                            android:id="@+id/info_phn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/info_phn"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:text="@string/copyright"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
