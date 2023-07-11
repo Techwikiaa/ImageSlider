@@ -24,7 +24,8 @@
             <!--SCROLL ONLY CHILD-->
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@color/black"
                 android:orientation="vertical">
@@ -99,18 +100,6 @@
                             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                     </LinearLayout>
-
-
-                    <com.denzcoskun.imageslider.ImageSlider
-                        android:id="@+id/image_slider"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentTop="true"
-                        android:layout_marginTop="1dp"
-                        app:iss_auto_cycle="true"
-                        app:iss_delay="1000"
-                        app:iss_period="2000"
-                        app:iss_text_align="CENTER" />
 
 
                     <ImageView
